@@ -7,6 +7,12 @@ header {
   margin: auto;
 }
 
+.headerMenu {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
 .menu ul {
   display: flex;
   list-style-type: none;
