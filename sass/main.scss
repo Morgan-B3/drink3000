@@ -1,6 +1,12 @@
+@use "variables" as v;
+
 * {
+    box-sizing: border-box;
     margin: 0;
-}
+    padding: 0;
+  }
+
+
 
 .header1 {
     width: 100%;
@@ -69,3 +75,114 @@ video {
     width: 100%;
 }
 
+// Titres
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+// Recettes
+.recipes{
+    button{
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+        padding: 0.4rem 0.7rem;
+        border-radius: 1rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.choixList{
+    display: flex;
+    justify-content: space-evenly;
+    button{
+        background-color: rgba(0, 0, 0, 0.15);
+        font-size: 1rem;
+    }
+}
+
+.boissonsList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1.5rem;
+    @media screen and (min-width: v.$sm-breakpoint) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.boisson{
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    @media screen and (min-width: v.$md-breakpoint) {
+        flex-basis: 30%;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px white;
+        margin-bottom: 0.5rem;
+        h5{
+            font-size: 2rem;
+        }
+        i{
+            font-size: 1.5rem;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        
+        button{
+            color: white;
+        }
+
+        .infos{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .select{
+            padding: 0;
+        }
+    }
+}
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+
+.choice{
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+    h4{
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+    }
+}
