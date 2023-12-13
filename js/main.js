@@ -1,7 +1,7 @@
 import Boisson from "./Boisson.js";
 
 /**
- * Recettes
+ * Affichage recettes
  */
 let boissons = [];
 
@@ -35,13 +35,13 @@ for (let boisson of boissons){
         icone = '<i class="fa-regular fa-snowflake"></i>';
     }
     recettesList.push(
-        `<div class="boisson ${boisson.color}">
+        `<div class="boisson ${boisson.color} ${boisson.type}">
             <div>
                 <div class="title">
                     <h5>${boisson.name}</h5>
                     ${icone}
                 </div>
-                <p>${boisson.description}</p>
+                <p class="text">${boisson.description}</p>
             </div>
             <div class="buttons">
                 <button class="infos">Plus d'infos</button>
@@ -50,3 +50,30 @@ for (let boisson of boissons){
         </div>`);
     }
 recettes.innerHTML = recettesList.join('');
+
+/**
+ * Choix catégorie
+ */
+let choixBtn = document.querySelectorAll(".choixBtn");
+let boissonsCards = document.querySelectorAll(".boisson");
+
+for (let btn of choixBtn){
+    btn.addEventListener("click", (e) => {
+        choixBtn.forEach(item => item.classList.remove("chosen"));
+        let type = btn.getAttribute('id');
+
+        btn.classList.toggle("chosen");
+        
+        for (let card of boissonsCards){
+            let boisson = boissons.find(item => item.name === card.querySelector("h5").innerHTML);
+
+            if (card.classList.contains(type)){
+                card.querySelector(".text").innerText = boisson.description;
+            } else {
+                card.querySelector(".text").innerText = "Boisson indisponible";
+            }
+        }
+    }); 
+}
+
+console.table(boissons);
