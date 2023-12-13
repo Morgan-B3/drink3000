@@ -25,6 +25,7 @@ html {
   justify-content: center;
   color: white;
   font-size: xx-large;
+  font-weight: 900;
   gap: 1rem;
 }
 .header1 nav ul {
@@ -48,6 +49,7 @@ html {
   justify-content: flex-start;
   color: white;
   font-size: xx-large;
+  font-weight: 900;
   gap: 1rem;
 }
 .header2 div nav {
@@ -61,6 +63,18 @@ html {
   color: white;
   align-items: center;
   justify-content: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home h1, .home i {
+  position: absolute;
+  font-size: xx-large;
+  color: white;
+  font-weight: 900;
 }
 
 video {
