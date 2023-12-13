@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.headerMenu {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.menu {
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 2rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
