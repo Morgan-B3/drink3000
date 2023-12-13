@@ -23,7 +23,7 @@ boissons.push(new Boisson(
     "desalterante",
     "orange"));
 
-let recettes = document.querySelector(".recipes");
+let recettes = document.querySelector(".boissonsList");
 let recettesList = [];
 
 for (let boisson of boissons){
@@ -36,11 +36,16 @@ for (let boisson of boissons){
     }
     recettesList.push(
         `<div class="boisson ${boisson.color}">
-            <h5>${boisson.name} ${icone}</h5>
-            <p>${boisson.description}</p>
             <div>
+                <div class="title">
+                    <h5>${boisson.name}</h5>
+                    ${icone}
+                </div>
+                <p>${boisson.description}</p>
+            </div>
+            <div class="buttons">
                 <button class="infos">Plus d'infos</button>
-                <button>Sélectionner</button>
+                <button class="select">Sélectionner</button>
             </div>
         </div>`);
     }
