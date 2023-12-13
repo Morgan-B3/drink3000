@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
     <title>Drink 3000</title>
 </head>
 <body>
-    
+    <header>
+        <p>Drink3000</p>
+        <nav>
+            <ul>
+                <li>Recettes</li>
+                <li>Références</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section>
+            <video src="/drink3000-starter/vid/mp4/Pour.mp4" muted autoplay loop></video>
+            <h1>Découvrez nos boissons énergisantes !</h1>
+            <!-- fleche -->
+        </section>
+
+        <section>
+            <h2>Nos recettes</h2>
+            <div>
+                <button>Energisante</button>
+                <button>Désaltérante</button>
+            </div> 
+            <div class="recipes">
+                <!-- Liste des boissons gérée en JS -->
+            </div>
+        </section>
+
+        <section>
+            <h4>Votre choix :</h4>
+            <p>Boisson sélectionnée</p>
+            <p class="choix">
+                <!-- choix géré par JS -->
+            </p>
+        </section>
+
+        <section>
+            <h2>Nos références</h2>
+            <div>
+                <div>
+                    <p>Cafés, Hôtels, Restaurants</p>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <p>Marques</p>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <p>Associations, écoles</p>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <p>
+                Toutes les marques commerciales déposées ou non déposées citées dans ce document sont la propriété exclusive de leurs détenteurs respectifs
+            </p>
+            <div>
+                <p>Publicités par l'objet</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <section>
+            <!-- Caroussel -->
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <div>
+                    <h3>Nous contacter ?</h3>
+                    <form action="">
+                        <label for="Email">Email</label>
+                        <input type="email">
+
+                        <label for="objet">Objet de la demande</label>
+                        <input type="text">
+                        
+                        <label for="demande">Votre demande</label>
+                        <input type="textarea">
+                    
+                        <button>ENVOYER</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Où sommes-nous ?</h3>
+                    <!--map-->
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
