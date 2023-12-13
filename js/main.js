@@ -1,5 +1,17 @@
 import Boisson from "./Boisson.js";
 
+let header = document.querySelector(".header1");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 1) {
+        header.classList.remove("header1");
+        header.classList.add("header2");
+    } else {
+        header.classList.remove("header2");
+        header.classList.add("header1");
+    }
+});
+
 /**
  * Affichage recettes
  */

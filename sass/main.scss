@@ -29,6 +29,7 @@ html{
         justify-content: center;
         color: white;
         font-size: xx-large;
+        font-weight: 900;
         gap: 1rem;
     }
 
@@ -42,7 +43,7 @@ html{
 .header2 {
     width: 100%;
     padding: 2rem 0;
-    position: absolute;
+    position: fixed;
     background-color: hsl(0, 0%, 0%, 0.2);
 
     div {
@@ -56,6 +57,7 @@ html{
             justify-content: flex-start;
             color: white;
             font-size: xx-large;
+            font-weight: 900;
             gap: 1rem;
         }
     
@@ -74,7 +76,18 @@ html{
     }
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    h1, i {
+        position: absolute;
+        font-size: xx-large;
+        color: white;
+        font-weight: 900;
+    }
+}
 
 video {
     top: 0;
