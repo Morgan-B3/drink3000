@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/477e17b079.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Drink 3000</title>
 </head>
@@ -95,24 +95,41 @@
             </div>
         </section>
 
-        <section>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <section id="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="button active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="button" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="button" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="img/carousel-1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Le meilleur Mojito de France !</h5>
+                      <p>Citron et menthe d'une qualité exceptionnelle pour une boisson parfaite</p>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/carousel-2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Garantie 100% fraîcheur</h5>
+                      <p>Nous garantissons votre satisfaction lors de la dégustation de nos boissons</p>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/carousel-3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Des cannettes et bouteilles sur mesure</h5>
+                      <p>Nous fabriquons dans notre atelier vos cannettes et bouteilles à votre image</p>
+                    </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>

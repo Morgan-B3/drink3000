@@ -117,3 +117,5 @@ for (let selectBtn of selectBtns){
         }
     })
 }
+
+// Carousel
