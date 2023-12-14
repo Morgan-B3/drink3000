@@ -158,10 +158,16 @@ video {
 h2{
     text-align: center;
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
     font-family: 'Gilroy';
     text-transform: uppercase;
     letter-spacing: 1rem;
+}
+
+h3{
+    margin: 0!important;
+    font-family: 'Gilroy';
 }
 
 // Recettes
@@ -219,6 +225,7 @@ h2{
         margin-bottom: 0.5rem;
         h5{
             font-size: 2rem;
+            letter-spacing: 0.2rem;
         }
         i{
             font-size: 1.5rem;
@@ -260,7 +267,7 @@ h2{
 .notChosen{
     .buttons{
         .select{
-            color:v.$secondary;
+            color:v.$transparent-black;
             &:hover{
                 cursor: not-allowed;
             }
