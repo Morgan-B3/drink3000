@@ -10,7 +10,7 @@ html {
 
 @font-face {
   font-family: "Gilroy";
-  src: url(../drink3000-starter/fonts/gilroy-extrabold-webfont.woff);
+  src: url(../fonts/gilroy-extrabold-webfont.woff);
 }
 .header1 {
   width: 100%;
