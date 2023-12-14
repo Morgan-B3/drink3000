@@ -98,17 +98,27 @@ html {
   font-weight: 900;
 }
 .home .arrow {
+  animation: MoveUpDown 1.5s linear infinite;
   position: absolute;
   font-size: xx-large;
   font-weight: 900;
   align-self: flex-end;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
   z-index: 1;
+  bottom: 0;
 }
 .home .arrow a {
   color: white;
 }
 
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
 video {
   top: 0;
   left: 0;
