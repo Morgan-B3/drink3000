@@ -23,6 +23,7 @@ html{
     position: absolute;
     display: flex;
     justify-content: center;
+    z-index: 1;
 
     div {
         display: flex;
@@ -35,7 +36,6 @@ html{
 
     a {
         text-decoration: none;
-    }
 
         div {
             display: flex;
@@ -46,11 +46,12 @@ html{
             font-weight: 900;
             gap: 1rem;
         }
-}
+    }
 
-nav {
-    ul {
-        display: none;
+    nav {
+        ul {
+            display: none;
+        }
     }
 }
 
@@ -70,20 +71,19 @@ nav {
 
         a {
             text-decoration: none;
-        }
 
-
-        div {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            color: v.$white;
-            font-size: xx-large;
-            font-weight: 900;
-            gap: 1rem;
-            width: fit-content;
+            div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: v.$white;
+                font-size: xx-large;
+                font-weight: 900;
+                gap: 1rem;
+                width: fit-content;
+            }
         }
-    
+        
         nav {
             display: flex;
             justify-content: center;
@@ -104,10 +104,12 @@ nav {
     }
 }
 
+
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     .h1Home {
         position: absolute;

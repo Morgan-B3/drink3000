@@ -19,6 +19,7 @@ html {
   position: absolute;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .header1 div {
   display: flex;
@@ -31,7 +32,7 @@ html {
 .header1 a {
   text-decoration: none;
 }
-.header1 div {
+.header1 a div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -40,8 +41,7 @@ html {
   font-weight: 900;
   gap: 1rem;
 }
-
-nav ul {
+.header1 nav ul {
   display: none;
 }
 
@@ -61,7 +61,7 @@ nav ul {
 .header2 div a {
   text-decoration: none;
 }
-.header2 div div {
+.header2 div a div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -92,6 +92,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .home .h1Home {
   position: absolute;
