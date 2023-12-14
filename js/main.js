@@ -57,7 +57,7 @@ for (let boisson of boissons){
             </div>
             <div class="buttons">
                 <button class="infos">Plus d'infos</button>
-                <button class="select">Sélectionner</button>
+                <button class="select ${boisson.name}">Sélectionner</button>
             </div>
         </div>`);
     }
@@ -71,10 +71,9 @@ let boissonsCards = document.querySelectorAll(".boisson");
 
 for (let btn of choixBtn){
     btn.addEventListener("click", (e) => {
-        choixBtn.forEach(item => item.classList.remove("chosen"));
-        let type = btn.getAttribute('id');
-
-        btn.classList.toggle("chosen");
+        boissonsCards.forEach(item => item.classList.remove("notChosen"));
+        boissonsCards.forEach(item => item.querySelector(".select").classList.remove("notChosen"));
+        let type = e.target.getAttribute('id');
         
         for (let card of boissonsCards){
             let boisson = boissons.find(item => item.name === card.querySelector("h5").innerHTML);
@@ -82,10 +81,39 @@ for (let btn of choixBtn){
             if (card.classList.contains(type)){
                 card.querySelector(".text").innerText = boisson.description;
             } else {
+                card.classList.toggle("notChosen");
+                card.querySelector(".select").classList.toggle("notChosen");
                 card.querySelector(".text").innerText = "Boisson indisponible";
             }
+            console.log(card.querySelector(".select").classList.contains(".notChosen"));
         }
     }); 
 }
 
 console.table(boissons);
+
+/**
+ * Choix boisson
+ */
+let selectBtns = document.querySelectorAll(".select");
+let selectedP = document.querySelector(".choix");
+
+let choix = "Aucune";
+selectedP.innerText = choix;
+
+for (let selectBtn of selectBtns){
+    selectBtn.addEventListener("click", (e) => {
+        if(!e.target.classList.contains("notChosen")){
+            console.log(e.target.classList.contains("notChosen"));
+            let btnClasses = e.target.classList;
+            console.log(btnClasses);
+            for(let boisson of boissons){
+                if(btnClasses.contains(boisson.name)){
+                    console.log(boisson.name);
+                    choix = boisson.name;
+                    selectedP.innerText = choix;
+                }
+            }
+        }
+    })
+}
