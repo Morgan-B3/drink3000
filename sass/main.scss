@@ -138,11 +138,15 @@ html{
     }
 }
 
-video {
-    top: 0;
-    left: 0;
-    background-size: cover;
-    width: 100%;
+.video {
+    height: 100vh;
+    overflow: hidden;
+    video {
+        top: 0;
+        left: 0;
+        background-size: cover;
+        width: 100%;
+    }
 }
 
 @keyframes MoveUpDown {
