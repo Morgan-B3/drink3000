@@ -109,7 +109,7 @@ h2 {
   justify-content: space-evenly;
 }
 .choixList button {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #d2d0c3;
   font-size: 1rem;
 }
 
@@ -165,24 +165,34 @@ h2 {
 .boisson .buttons .infos {
   background-color: rgba(0, 0, 0, 0.3);
 }
+.boisson .buttons .infos:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .boisson .buttons .select {
   padding: 0;
 }
 
 .red {
-  background-color: red;
+  background-color: #e20614;
 }
 
 .green {
-  background-color: green;
+  background-color: #a0c525;
 }
 
 .orange {
-  background-color: orange;
+  background-color: #c94c05;
+}
+
+.notChosen .buttons .select {
+  color: #404341;
+}
+.notChosen .buttons .select:hover {
+  cursor: not-allowed;
 }
 
 .choice {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #d2d0c3;
   display: flex;
   flex-direction: column;
   align-items: center;

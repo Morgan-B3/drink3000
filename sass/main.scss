@@ -27,7 +27,7 @@ html{
     div {
         display: flex;
         justify-content: center;
-        color: white;
+        color: v.$white;
         font-size: xx-large;
         font-weight: 900;
         gap: 1rem;
@@ -55,7 +55,7 @@ html{
         div {
             display: flex;
             justify-content: flex-start;
-            color: white;
+            color: v.$white;
             font-size: xx-large;
             font-weight: 900;
             gap: 1rem;
@@ -68,7 +68,7 @@ html{
                 display: flex;
                 list-style-type: none;
                 gap: 2rem;
-                color: white;
+                color: v.$white;
                 align-items: center;
                 justify-content: center;
             }
@@ -84,7 +84,7 @@ html{
     h1, i {
         position: absolute;
         font-size: xx-large;
-        color: white;
+        color: v.$white;
         font-weight: 900;
     }
 }
@@ -124,7 +124,7 @@ h2{
     display: flex;
     justify-content: space-evenly;
     button{
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: v.$light-gray;
         font-size: 1rem;
     }
 }
@@ -144,7 +144,7 @@ h2{
 .boisson{
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
-    color: white;
+    color: v.$white;
     flex-basis: 45%;
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ h2{
     .title{
         display: flex;
         justify-content: space-between;
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px v.$white;
         margin-bottom: 0.5rem;
         h5{
             font-size: 2rem;
@@ -173,11 +173,14 @@ h2{
         align-items: end;
         
         button{
-            color: white;
+            color: v.$white;
         }
 
         .infos{
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: v.$transparent-black;
+            &:hover{
+                background-color: v.$transparent-black-lighter;
+            }
         }
 
         .select{
@@ -187,17 +190,28 @@ h2{
 }
 
 .red{
-    background-color: red;
+    background-color: v.$red;
 }
 .green{
-    background-color: green;
+    background-color: v.$green;
 }
 .orange{
-    background-color: orange;
+    background-color: v.$orange;
+}
+
+.notChosen{
+    .buttons{
+        .select{
+            color:v.$secondary;
+            &:hover{
+                cursor: not-allowed;
+            }
+        }
+    }
 }
 
 .choice{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: v.$light-gray;
     display: flex;
     flex-direction: column;
     align-items: center;
