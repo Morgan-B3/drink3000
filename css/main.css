@@ -250,4 +250,72 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+#nosReferences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+}
+#nosReferences h6 {
+  font-size: 1.2rem;
+  color: #333333;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: solid 2px #333333;
+  height: fit-content;
+}
+#nosReferences p {
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+}
+#nosReferences img {
+  width: 100%;
+  margin: auto;
+}
+#nosReferences .references1 {
+  width: 100%;
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references1 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references1 h6, #nosReferences .references1 .image {
+    flex-basis: 50%;
+  }
+}
+#nosReferences .references1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references1 div {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references2 div {
+    width: 75%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 991px) {
+  #nosReferences .references2 img {
+    width: 20%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
