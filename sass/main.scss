@@ -138,11 +138,15 @@ html{
     }
 }
 
-video {
-    top: 0;
-    left: 0;
-    background-size: cover;
-    width: 100%;
+.video {
+    height: 100vh;
+    overflow: hidden;
+    video {
+        top: 0;
+        left: 0;
+        background-size: cover;
+        width: 100%;
+    }
 }
 
 @keyframes MoveUpDown {
@@ -293,31 +297,76 @@ h3{
 .contact {
     background-color: v.$footer;
     color: v.$white;
+    padding: 3rem 0;
 
     div {
         width: 80%;
         margin: auto;
+        @media screen and (min-width: v.$sm-breakpoint) {
+            display: flex;
+            gap: 2rem;
+        }
 
         div {
-
+            @media screen and (min-width: v.$sm-breakpoint) {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
             h3 {
                 text-align: center;
             }
 
             form {
+                display: flex;
+                flex-direction: column;
                 div {
                     display: flex;
-                    justify-content: flex-end;
+                    flex-direction: column;
                     width: 100%;
-                    gap: 2rem;
                     margin: 0.75rem 0;
+
+                    @media screen and (min-width: v.$sm-breakpoint) {
+                        flex-direction: row;
+                        justify-content: flex-end;
+                    }
 
                     input {
                         border: none;
                         border-radius: 5px;
-                        width: 50%;
+                        width: 100%;
+                        height: 2rem;
+
+                        @media screen and (min-width: v.$sm-breakpoint) {
+                            width: 70%;
+                        }
+                    }
+
+                    .textarea {
+                        height: 8rem;
                     }
                 }
+
+                button {
+                    border: none;
+                    background-color: v.$footer;
+                    color: v.$white;
+                }
+            }
+        }
+
+        .map {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+            @media screen and (min-width: v.$sm-breakpoint) {
+                margin-top: 0;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
             }
         }
     }
