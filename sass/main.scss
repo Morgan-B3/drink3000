@@ -286,31 +286,54 @@ h2{
 .contact {
     background-color: v.$footer;
     color: v.$white;
+    padding: 3rem 0;
 
     div {
         width: 80%;
         margin: auto;
 
         div {
-
             h3 {
                 text-align: center;
             }
 
             form {
+                display: flex;
+                flex-direction: column;
                 div {
                     display: flex;
-                    justify-content: flex-end;
+                    flex-direction: column;
                     width: 100%;
-                    gap: 2rem;
                     margin: 0.75rem 0;
 
                     input {
                         border: none;
                         border-radius: 5px;
-                        width: 50%;
+                        width: 100%;
+                        height: 2rem;
+                    }
+
+                    .textarea {
+                        height: 8rem;
                     }
                 }
+
+                button {
+                    border: none;
+                    background-color: v.$footer;
+                    color: v.$white;
+                }
+            }
+        }
+
+        .map {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
             }
         }
     }
