@@ -28,7 +28,20 @@ html {
   font-weight: 900;
   gap: 1rem;
 }
-.header1 nav ul {
+.header1 a {
+  text-decoration: none;
+}
+.header1 div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+  font-weight: 900;
+  gap: 1rem;
+}
+
+nav ul {
   display: none;
 }
 
@@ -37,6 +50,7 @@ html {
   padding: 2rem 0;
   position: fixed;
   background-color: hsla(0, 0%, 0%, 0.2);
+  z-index: 1;
 }
 .header2 div {
   display: flex;
@@ -44,13 +58,18 @@ html {
   width: 80%;
   margin: auto;
 }
+.header2 div a {
+  text-decoration: none;
+}
 .header2 div div {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   color: white;
   font-size: xx-large;
   font-weight: 900;
   gap: 1rem;
+  width: fit-content;
 }
 .header2 div nav {
   display: flex;
@@ -64,19 +83,44 @@ html {
   align-items: center;
   justify-content: center;
 }
+.header2 div nav ul a {
+  text-decoration: none;
+  color: white;
+}
 
 .home {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.home h1, .home i {
+.home .h1Home {
   position: absolute;
   font-size: xx-large;
   color: white;
   font-weight: 900;
 }
+.home .arrow {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+  font-size: xx-large;
+  font-weight: 900;
+  align-self: flex-end;
+  padding-bottom: 3rem;
+  z-index: 1;
+  bottom: 0;
+}
+.home .arrow a {
+  color: white;
+}
 
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
 video {
   top: 0;
   left: 0;

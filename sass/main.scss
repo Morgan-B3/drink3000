@@ -33,18 +33,34 @@ html{
         gap: 1rem;
     }
 
-    nav {
-        ul {
-            display: none;
+    a {
+        text-decoration: none;
+    }
+
+        div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-size: xx-large;
+            font-weight: 900;
+            gap: 1rem;
         }
+}
+
+nav {
+    ul {
+        display: none;
     }
 }
+
 
 .header2 {
     width: 100%;
     padding: 2rem 0;
     position: fixed;
     background-color: hsl(0, 0%, 0%, 0.2);
+    z-index: 1;
 
     div {
         display: flex;
@@ -52,13 +68,20 @@ html{
         width: 80%;
         margin: auto;
 
+        a {
+            text-decoration: none;
+        }
+
+
         div {
             display: flex;
             justify-content: flex-start;
+            align-items: center;
             color: v.$white;
             font-size: xx-large;
             font-weight: 900;
             gap: 1rem;
+            width: fit-content;
         }
     
         nav {
@@ -71,6 +94,11 @@ html{
                 color: v.$white;
                 align-items: center;
                 justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -78,14 +106,38 @@ html{
 
 .home {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    h1, i {
+    .h1Home {
         position: absolute;
         font-size: xx-large;
         color: v.$white;
         font-weight: 900;
+    }
+
+    .arrow {
+        animation: MoveUpDown 1.5s linear infinite;
+        position: absolute;
+        font-size: xx-large;
+        font-weight: 900;
+        align-self: flex-end;
+        padding-bottom: 3rem;
+        z-index: 1;
+        bottom: 0;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 50px;
     }
 }
 
