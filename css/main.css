@@ -10,7 +10,7 @@ html {
 
 @font-face {
   font-family: "Gilroy";
-  src: url(../drink3000-starter/fonts/gilroy-extrabold-webfont.woff);
+  src: url(../fonts/gilroy-extrabold-webfont.woff);
 }
 .header1 {
   width: 100%;
@@ -119,6 +119,13 @@ html {
   color: white;
 }
 
+video {
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+}
+
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0;
@@ -127,13 +134,6 @@ html {
     bottom: 50px;
   }
 }
-video {
-  top: 0;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-}
-
 h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -254,6 +254,30 @@ h2 {
   font-size: 1.5rem;
   font-weight: 100;
   margin-bottom: 0.5rem;
+}
+
+.contact {
+  background-color: #464646;
+  color: white;
+}
+.contact div {
+  width: 80%;
+  margin: auto;
+}
+.contact div div h3 {
+  text-align: center;
+}
+.contact div div form div {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 2rem;
+  margin: 0.75rem 0;
+}
+.contact div div form div input {
+  border: none;
+  border-radius: 5px;
+  width: 50%;
 }
 
 #nosReferences {
