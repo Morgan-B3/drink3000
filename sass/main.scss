@@ -60,7 +60,7 @@ html{
     width: 100%;
     padding: 2rem 0;
     position: fixed;
-    background-color: hsl(0, 0%, 0%, 0.2);
+    background-color: hsl(0, 0%, 0%, 0.4);
     z-index: 1;
 
     div {
@@ -95,6 +95,10 @@ html{
                 align-items: center;
                 justify-content: center;
 
+                @media screen and (max-width: v.$sm-breakpoint) {
+                    display: none;
+                }
+
                 a {
                     text-decoration: none;
                     color: white;
@@ -116,6 +120,7 @@ html{
         font-size: xx-large;
         color: v.$white;
         font-weight: 900;
+        text-align: center;
     }
 
     .arrow {
@@ -124,7 +129,6 @@ html{
         font-size: xx-large;
         font-weight: 900;
         align-self: flex-end;
-        padding-bottom: 3rem;
         z-index: 1;
         bottom: 0;
 
