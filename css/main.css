@@ -200,6 +200,7 @@ h2 {
 }
 .boisson .title h5 {
   font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 .boisson .title i {
   font-size: 1.5rem;
@@ -235,7 +236,7 @@ h2 {
 }
 
 .notChosen .buttons .select {
-  color: #404341;
+  color: rgba(0, 0, 0, 0.3);
 }
 .notChosen .buttons .select:hover {
   cursor: not-allowed;
