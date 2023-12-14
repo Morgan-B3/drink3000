@@ -282,6 +282,7 @@ h2 {
 }
 #nosReferences .references1 {
   width: 100%;
+  margin: auto;
 }
 @media screen and (min-width: 991px) {
   #nosReferences .references1 {
