@@ -14,32 +14,33 @@
 <body>
     <header class="header1">
         <div>
-            <div>
-                <i class="fa-solid fa-martini-glass"></i>Drink 3000
-            </div>
+            <a href="#home">
+                <div>
+                    <i class="fa-solid fa-martini-glass"></i><p>Drink 3000</p>
+                </div>
+            </a>
             <nav>
                 <ul>
-                    <li>Recettes</li>
-                    <li>Références</li>
-                    <li>Contact</li>
+                    <a href="#nosRecettes"><li>Recettes</li></a>
+                    <li><a href="#nosReferences">Références</a></li>
+                    <a href="#contact"><li>Contact</li></a>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        
-        <section class="home">
-            <div>
+        <section id="home" class="home">
+            <div class="h1Home">
                 <h1>Découvrez nos boissons énergisantes !</h1>
             </div>
-            <div>
-                <i class="fa-solid fa-arrow-down"></i>
+            <div class="arrow">
+                <a href="#nosRecettes"><i class="fa-solid fa-arrow-down"></i></a>
             </div>
             <video src="/drink3000-starter/vid/mp4/Pour.mp4" muted autoplay loop></video>
         </section>
 
-        <section class="recipes">
+        <section id="nosRecettes" class="recipes">
             <h2>Nos recettes</h2>
             <div class="choixList">
                 <button class="choixBtn" id="energisante">Energisante</button>
@@ -58,7 +59,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="nosReferences">
             <h2>Nos références</h2>
             <div>
                 <div>
@@ -90,7 +91,7 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section id="contact">
             <div>
                 <div>
                     <h3>Nous contacter ?</h3>

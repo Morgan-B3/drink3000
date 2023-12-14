@@ -33,6 +33,20 @@ html{
         gap: 1rem;
     }
 
+    a {
+        text-decoration: none;
+
+        div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-size: xx-large;
+            font-weight: 900;
+            gap: 1rem;
+        }
+    }
+
     nav {
         ul {
             display: none;
@@ -45,6 +59,7 @@ html{
     padding: 2rem 0;
     position: fixed;
     background-color: hsl(0, 0%, 0%, 0.2);
+    z-index: 1;
 
     div {
         display: flex;
@@ -52,13 +67,19 @@ html{
         width: 80%;
         margin: auto;
 
-        div {
-            display: flex;
-            justify-content: flex-start;
-            color: white;
-            font-size: xx-large;
-            font-weight: 900;
-            gap: 1rem;
+        a {
+            text-decoration: none;
+
+            div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: white;
+                font-size: xx-large;
+                font-weight: 900;
+                gap: 1rem;
+                width: fit-content;
+            }
         }
     
         nav {
@@ -68,9 +89,13 @@ html{
                 display: flex;
                 list-style-type: none;
                 gap: 2rem;
-                color: white;
                 align-items: center;
                 justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -78,14 +103,27 @@ html{
 
 .home {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    h1, i {
+    .h1Home {
         position: absolute;
         font-size: xx-large;
         color: white;
         font-weight: 900;
+    }
+
+    .arrow {
+        position: absolute;
+        font-size: xx-large;
+        font-weight: 900;
+        align-self: flex-end;
+        padding-bottom: 10rem;
+        z-index: 1;
+
+        a {
+            color: white;
+        }
     }
 }
 
